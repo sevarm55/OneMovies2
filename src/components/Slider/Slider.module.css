@@ -160,7 +160,7 @@
     }
     .arrowsBtn {
         justify-content: flex-end;
-        bottom: -200px;
+        bottom: -100px;
         padding: 0 30px;
         gap: 5px;
     }
