@@ -1,0 +1,15 @@
+.logoBox {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .logoBox {
+        width: 100%;
+        justify-content: center;
+    }
+}

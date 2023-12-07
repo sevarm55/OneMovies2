@@ -1,0 +1,239 @@
+.moviesDetailPage {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+.bg {
+    height: 80vh;
+    position: relative;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.contentBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    top: -400px;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left img {
+    width: 500px;
+}
+
+.right {
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.right h2 {
+    font-size: 4.4vmax;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rating p {
+    font-weight: 700;
+}
+
+.rating img {
+    width: 50px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.like {
+    width: 80px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.like:active {
+    transform: scale(0.9);
+}
+
+.like:hover {
+    background-color: rgba(255, 0, 0, 0.364);
+}
+
+.play {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: red;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play:hover {
+    background-color: rgba(255, 0, 0, 0.354);
+}
+
+.play:active {
+    transform: scale(0.9);
+}
+
+.actors {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: auto;
+}
+
+.actorstitle {
+    position: relative;
+}
+
+.actorstitle p {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.actorstitle::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 9px;
+    background-color: red;
+    bottom: -10px;
+}
+
+.actorsCard {
+    min-width: 139px;
+    height: 196px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.actorsCard img {
+    width: 139px;
+    height: 196px;
+}
+
+.actorsContent {
+    display: flex;
+    gap: 20px;
+}
+
+.actorsCard p {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.542);
+}
+
+
+
+.trailer {
+    width: 100%;
+    min-height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -100px;
+    padding: 0 10px;
+}
+
+.trailer iframe {
+    width: 90%;
+    height: 90vmin;
+    position: absolute;
+    border: none;
+}
+
+
+.trilerTitle {
+    width: 100%;
+    position: absolute;
+    top: -150px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.logn {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid red;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contentBox {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .left img {
+        width: 50%;
+    }
+    .right {
+        width: 100%;
+    }
+    .actorsContent {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

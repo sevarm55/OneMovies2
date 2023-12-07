@@ -1,0 +1,46 @@
+.myProfilePage {
+    min-height: 100vh;
+    background-color: black;
+    padding: 100px 20px;
+}
+
+.usersCard {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBox {
+    width: auto;
+    height: 50%;
+    display: flex;
+}
+
+.imgBox img {
+    width: 50vmin;
+}
+
+.userContent {
+    text-align: start;
+    padding: 0 20px;
+}
+
+.userContent h2 {
+    color: red;
+}
+
+.userContent span {
+    color: white;
+    text-transform: uppercase;
+}
+
+.reg {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

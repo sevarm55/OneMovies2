@@ -1,0 +1,27 @@
+.myFavoritePage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 20px;
+    background-color: black;
+    gap: 20px;
+}
+
+.moviesCard {
+    min-width: 50vmin;
+    height: 70vmin;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 20px; 
+}
+
+.regist {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}

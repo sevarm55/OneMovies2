@@ -1,0 +1,12 @@
+.header {
+	width: 100%;
+	height: 65px;
+	display: flex;
+	position: fixed;
+	z-index: 9;
+    transition: background-color 0.2s ease;
+}
+
+.scrolled {
+    background-color: #131313;
+}

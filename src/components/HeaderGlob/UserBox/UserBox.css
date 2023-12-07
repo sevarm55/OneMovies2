@@ -1,0 +1,39 @@
+.userBox {
+	width: 19em;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 30px;
+	gap: 10px;
+}
+
+.imgBox {
+	border-radius: 100px;
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	cursor: pointer;
+	border: 3px solid transparent;
+	transition: 0.2s;
+}
+
+.imgBox:hover {
+	border: 3px solid red;
+}
+
+.imgBox img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.userBox h3 {
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 425px) {
+	.userBox h3 {
+		display: none;
+	}
+}

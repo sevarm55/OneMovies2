@@ -1,0 +1,53 @@
+.userBoxNav {
+	width: 270px;
+	height: auto;
+	background-color: #363636;
+	position: absolute;
+	top: 55px;
+	right: 10px;
+	opacity: 0;
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 10px;
+	gap: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 999;
+}
+
+.userBoxNavOpen {
+	top: 65px;
+	opacity: 1;
+	overflow: hidden;
+	visibility: visible;
+}
+
+.userBoxNav a {
+	padding: 10px 30px;
+	border-radius: 4px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: flex;
+	gap: 20px;
+	font-size: 16px;
+	transition: 0.1s;
+}
+
+.userBoxNav a:active {
+	transform: scale(0.9);
+}
+
+.userBoxNav a svg {
+	font-size: 25px;
+}
+
+.userBoxNav a:hover {
+	background-color: #eeeeee4c;
+}
+
+a.active {
+	background-color: red;
+}

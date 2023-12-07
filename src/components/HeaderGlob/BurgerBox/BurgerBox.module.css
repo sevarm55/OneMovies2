@@ -1,0 +1,38 @@
+.burgerBox {
+	width: 4em;
+	height: 100%;
+	display: none;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.burgerBorder {
+	width: 45px;
+	height: 45px;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.line {
+	width: 25px;
+	height: 2px;
+	background-color: white;
+}
+
+.line1 {
+	transform: translateY(-5px);
+}
+
+.line3 {
+	transform: translateY(5px);
+}
+
+@media screen and (max-width: 768px) {
+	.burgerBox {
+		display: flex;
+	}
+}
