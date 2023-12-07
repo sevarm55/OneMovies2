@@ -1,7 +1,7 @@
 const apiKey = `&&api_key=82018daf2d3709d864cbaa4558efc3d5`
 const page = `&page=1`
 
-export const LOGINUSER_URL = 'http://localhost:8000/users'
+export const LOGINUSER_URL = 'http://localhost:3001/users'
 
 export const getMoviesUrl = (page,id) => {
     return `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${page}&sort_by=popularity.desc${apiKey}&id=${id}`
