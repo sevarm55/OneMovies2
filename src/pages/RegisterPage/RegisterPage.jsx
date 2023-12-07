@@ -60,7 +60,16 @@ const RegisterPage = ({ setUsers }) => {
                 ...result,
             })
             navigate(`/`)
-            notify()
+            toast.success('SIGN IN SUCCESS', {
+                position: 'bottom-left',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: 'light',
+            })
         }
         req()
     }
@@ -76,7 +85,10 @@ const RegisterPage = ({ setUsers }) => {
                         <h2 className="loginLogo">
                             One<span>Movies</span>
                         </h2>
-                        <input name="email" type="text" placeholder="EMAIL" />
+                        <input name="email"  type="text" placeholder="EMAIL"
+                        autoComplete="off"
+
+                         />
                         <input
                             name="userName"
                             type="text"

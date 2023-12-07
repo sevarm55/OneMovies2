@@ -80,11 +80,13 @@ const LoginPage = ({ setUsers }) => {
                         name="userName"
                         type="text"
                         placeholder="USERNAME OR EMAIL"
+                        autoComplete="off"
                     />
                     <input
                         name="password"
                         type="password"
                         placeholder="PASSWORD"
+                        autoComplete="off"
                     />
                     <button className="loginBtn buttons">SIGN IN</button>
                     <NavLink to="/registerpage" className="registerBtn buttons">
