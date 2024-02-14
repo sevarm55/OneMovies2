@@ -3,7 +3,7 @@ const page = `&page=1`
 
 export const LOGINUSER_URL = 'http://localhost:3001/users'
 
-export const getMoviesUrl = (page,id) => {
+export const getMoviesUrl = (id) => {
     return `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${page}&sort_by=popularity.desc${apiKey}&id=${id}`
 }
 
